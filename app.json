@@ -1,0 +1,16 @@
+{
+    "name": "Chatbot-Discord",
+    "description": "Most powerful discord chatbot",
+    "repository": "https://github.com/MoeZilla/Chatbot-Discord",
+    "env": {
+        "TOKEN": {
+            "description": "Your Discord token for the bot",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
