@@ -1,0 +1,23 @@
+{
+  "name": "Discord-Chatbot",
+  "version": "0.0.4",
+  "description": "A chatbot for you to talk with on Discord Enjoy your chatting with the artificially intelligent telegram bot.",
+  "main": "chatbot.js",
+  "scripts": {
+    "start": "node chatbot.js"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [
+   "chatbot",
+   "kukichatbot",
+   "discord.js"
+  ],
+  "author": "MoeZilla",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "discord.js": "^12.4.0"
+  }
+}
