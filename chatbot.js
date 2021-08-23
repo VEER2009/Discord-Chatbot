@@ -7,10 +7,10 @@ client.on("message", async message => {
 if (message.channel.name == "┃°🚏┨rias-chats") {
 if (message.author.bot) return;
 if (message.content.includes(`what is your name`)) {
-return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.author.id}>, My Name Is Serena`);
+return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.author.id}>, My Name Is Rias`);
  }
 if (message.content.includes(`What is your name`)) {
-return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.author.id}>, My Name Is Serena`);
+return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.author.id}>, My Name Is Rias`);
  }
   message.channel.startTyping();
 if (!message.content) return message.channel.send("Please say something.");
