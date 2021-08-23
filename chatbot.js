@@ -4,7 +4,7 @@ const f = require("node-fetch");
 const client = new Discord.Client();
 
 client.on("message", async message => {
-if (message.channel.name == "rias chats") {
+if (message.channel.name == "┃°:busstop:┨rias-chats") {
 if (message.author.bot) return;
 if (message.content.includes(`what is your name`)) {
 return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.author.id}>, My Name Is Serena`);
