@@ -24,3 +24,6 @@ f(`https://kuki.up.railway.app/Kuki/chatbot?message=${encodeURIComponent(message
 });
 
 client.login(process.env.TOKEN)
+
+
+client.login(process.env.TOKEN)
