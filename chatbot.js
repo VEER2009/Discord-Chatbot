@@ -4,7 +4,7 @@ const f = require("node-fetch");
 const client = new Discord.Client();
 
 client.on("message", async message => {
-if (message.channel.name == "┃°🚏┨rias-chats") {
+if (message.channel.name == "chatbot") {
 if (message.author.bot) return;
 if (message.content.includes(`what is your name`)) {
 return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.author.id}>, My Name Is Serena`);
@@ -14,7 +14,7 @@ return message.channel.send(`> ${message.content} \n Hello Otaku <@${message.aut
  }
   message.channel.startTyping();
 if (!message.content) return message.channel.send("Please say something.");
-f(`https://kuki.up.railway.app/Kuki/chatbot?message=${encodeURIComponent(message.content)}`)
+f(`https://kukiapi.up.railway.app/Kuki/chatbot?message=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(data => {
         message.channel.send(`> ${message.content} \n  ${data.reply}`);
@@ -22,10 +22,5 @@ f(`https://kuki.up.railway.app/Kuki/chatbot?message=${encodeURIComponent(message
       message.channel.stopTyping();
 }
 });
-
-client.login(process.env.TOKEN)
-
-client.login(process.env.TOKEN)
-
 
 client.login(process.env.TOKEN)
